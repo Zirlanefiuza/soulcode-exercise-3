@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="form-section">
+            <h2><i class="ri-survey-line"></i> Enquete</h2>
+            <form>
+                <div class="form-group">
+                    <label for="survey-question">Qual seu hobby favorito?</label>
+                    
+                </div>
+                <fieldset class="form-group">
+                    <legend>Opções de Resposta</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="survey-options" id="option1" value="option1" required>
+                        <label class="form-check-label" for="option1">Assistir filmes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="survey-options" id="option2" value="option2" required>
+                        <label class="form-check-label" for="option2">Ler um bom livro</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="survey-options" id="option3" value="option3" required>
+                        <label class="form-check-label" for="option3">Viajar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="survey-options" id="option3" value="option3" required>
+                        <label class="form-check-label" for="option3">Ficar em casa</label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-custom">Enviar</button>
+            </form>
+            <a href="index.html" class="btn btn-link">Voltar</a>
+        </section>
+    </div>
+</body>
+</html>

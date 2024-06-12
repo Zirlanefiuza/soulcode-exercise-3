@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="form-section">
+            <h2><i class="ri-stethoscope-line"></i> Agendamento de Consulta Médica</h2>
+            <form>
+                <div class="form-group ">
+                    <label for="medical-name">Nome</label>
+                    <input type="text" class="form-control" id="medical-name" placeholder="nome deve conter apenas letras e espaços" pattern="[A-Za-z\s]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="medical-email">E-mail</label>
+                    <input type="email" class="form-control" id="medical-email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="medical-phone">Telefone</label>
+                    <input type="tel" class="form-control" id="medical-phone"  pattern="\d{10,11}" placeholder="telefone deve conter 10 ou 11 dígitos"  required>
+                </div>
+                <div class="form-group">
+                    <label for="medical-date">Data da Consulta</label>
+                    <input type="date" class="form-control" id="medical-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="medical-type">Tipo de Consulta</label>
+                    <select class="form-control" id="medical-type">
+                        <option>Clínica Geral</option>
+                        <option>Cardiologia</option>
+                        <option>Dermatologia</option>
+                        <option>Pediatria</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="medical-comments">Comentários Adicionais</label>
+                    <textarea class="form-control" id="medical-comments" rows="3" placeholder="Seus comentários"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Enviar</button>
+            </form>
+            <a href="index.html" class="btn btn-link">Voltar</a>
+        </section>
+    </div>
+</body>
+</html>

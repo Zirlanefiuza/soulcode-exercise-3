@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="form-section">
+            <h2><i class="ri-hotel-line"></i> Reserva de Hotel</h2>
+            <form>
+                <div class="form-group">
+                    <label for="hotel-name">Nome</label>
+                    <input type="text" class="form-control" id="hotel-name" placeholder="nome deve conter apenas letras e espaços" pattern="[A-Za-z\s]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-email">E-mail</label>
+                    <input type="email" class="form-control" id="hotel-email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-checkin">Data de Check-in</label>
+                    <input type="date" class="form-control" id="hotel-checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-checkout">Data de Check-out</label>
+                    <input type="date" class="form-control" id="hotel-checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-room-type">Tipo de Quarto</label>
+                    <select class="form-control" id="hotel-room-type">
+                        <option>Solteiro</option>
+                        <option>Casal</option>
+                        <option>Família</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-comments">Comentários Adicionais</label>
+                    <textarea class="form-control" id="hotel-comments" rows="4" placeholder="Seus comentários"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Enviar</button>
+            </form>
+            <a href="index.html" class="btn btn-link">Voltar</a>
+        </section>
+    </div>
+</body>
+</html>
